@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+@media (max-width: 790px) {
+    .first-banner {
+        display: none;
+    }
+}
+
+.menu-bar{
+    margin-left: 12vmax;
+}
+
+.menu-bar ul {
+    position: relative;
+    flex-flow: wrap;
+    margin: 0;
+    padding: 0;
+}
+.logoimg {
+    width: 6vmax;
+    margin-bottom: -2.5vmax;
+    margin-left: 1.5vmax;
+    margin-right: 2vmax;
+    margin-top: 0vmax;
+}
+@media (max-width: 790px) {
+    .logoimg {
+        width: 12vmax;
+        margin-top: 1vmax;
+        margin-left: 1vmax;
+        margin-bottom: 1vmax;
+    }
+}
+#check {
+    display: none;
+}
+.navbar i{
+    font-size: 2rem;
+    float: right;
+    color: whitesmoke;
+    background: #1a1a1a;
+    padding: 0.9vmax;
+    cursor: pointer;
+    margin-top: 1vmax;
+    margin-right: 2vmax;
+    display: none;
+}
+@media(max-width:790px){
+    .medianavbar{
+        background-color: #2180d4;
+        width: 100%;
+        height: 10vmax;
+    }
+    .menu-bar{
+        display: none;
+    }
+    .medianavbar i{
+        display: block;
+    }
+}
+
+.menu-bar ul li {
+    position: relative;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    font-size: 1.3vmax;
+    padding: 0.5vmax;
+    padding-bottom: 1vmax;
+}
+
+.menu-bar ul li a {
+    color: #1a1a1a;
+}
+
+.menu-bar ul li:hover {
+    background-color: #11a199;
+    transition-duration: 250ms;
+}
+.menu-bar ul li:hover a {
+    color: rgb(233, 215, 215);
+}
+.sub-menu-1 {
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    flex-flow: wrap;
+    margin-top: 1vmax;
+    margin-left: -0.5vmax;
+    background-color: #1a1a1a;
+    border-bottom: 0.5vmax solid #ffc400;
+    z-index: 1;
+}
+.sub-menu-1 ul li {
+    width: 16vmax;
+}
+.sub-menu-2 {
+    display: none;
+}
+.sub-menu-1 ul li:hover .sub-menu-2 {
+    display: block;
+    position: absolute;
+    flex-flow: wrap;
+    margin-top: -2.05vmax;
+    margin-left: 15.5vmax;
+    background-color: #1a1a1a;
+    border-bottom: 0.36vmax solid #ffc400;
+}
+
