@@ -20,4 +20,10 @@ class MessagesController extends Controller
         $admin_message->adminmessage=$req->input('adminmessage');
         $admin_message->save();
     }
+
+    public function insert_admin_data_new(Request $req){
+        $admin_message=new adminMessage;
+        $admin_message->adminmessage=$req->input('adminmessage');
+        $admin_message->save();
+    }
 }
