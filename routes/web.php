@@ -21,5 +21,6 @@ Route::get('admin',[RoutingController::class,'adminpage']);
 Route::get('message',[RoutingController::class,'messagepage']);
 Route::post('insert',[MessagesController::class,'insert_data']);
 Route::post('insert-admin-message',[MessagesController::class,'insert_admin_data']);
+Route::put('update-admin-message',[MessagesController::class,'insert_admin_data']);
 
 
